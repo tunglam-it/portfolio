@@ -38,8 +38,6 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    @include('partialsBE.content-header')
-
     <!-- Main content -->
     @yield('content')
     <!-- /.content -->

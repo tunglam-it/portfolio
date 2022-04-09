@@ -88,6 +88,17 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+#icon-media:hover{
+  background-color: rgb(255,200,0);
+  color: black;
+}
+#img-start{
+  border-top-left-radius: 40%;
+  border-top-right-radius: 2%;
+  border-bottom-right-radius: 2%;
+  border-bottom-left-radius: 2%;
+  image-rendering: high-quality;
+}
 
 hr {
   margin: 1rem 0;
