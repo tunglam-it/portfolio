@@ -38,6 +38,7 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
+    @include('partialsBE.alert')
     <!-- Main content -->
     @yield('content')
     <!-- /.content -->

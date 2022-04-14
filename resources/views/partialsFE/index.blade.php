@@ -52,7 +52,7 @@
     <div class="col-sm-2"></div>
     <div class="col-sm-4">
       <div>
-        <img id="img-start" src="{{asset('assets/img/avt-re.jpg')}}" alt="avt">
+        <img id="img-start" src="{{asset('images/main/lisa.jpg')}}" alt="avt">
       </div>
     </div>
     <div class="col-md-1"></div>
