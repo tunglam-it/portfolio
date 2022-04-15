@@ -23,25 +23,25 @@
             <div class="col-md-5">
               <label for="">Title 1</label>
               <input type="text" name="title1" class="form-control @error('title1') is-invalid @enderror"
-                     value="{{$main->title1}}">
+                     value="{{(@$main->title1) ? $main->title1:''}}">
               @error('title1')
               <div class="text-danger">{{ $message }}</div>
               @enderror
               <label for="">Title 2</label>
               <input type="text" name="title2" class="form-control @error('title2') is-invalid @enderror"
-                     value="{{$main->title2}}">
+                     value="{{(@$main->title2)?$main->title2:''}}">
               @error('title2')
               <div class="text-danger">{{ $message }}</div>
               @enderror
               <label for="">Subtitle 1</label>
               <input type="text" name="subtitle1" class="form-control @error('subtitle1') is-invalid @enderror"
-                     value="{{$main->subtitle1}}">
+                     value="{{(@$main->subtitle1)?$main->subtitle1:''}}">
               @error('subtitle1')
               <div class="text-danger">{{ $message }}</div>
               @enderror
               <label for="">Subtitle 2</label>
               <input type="text" name="subtitle2" class="form-control @error('subtitle2') is-invalid @enderror"
-                     value="{{$main->subtitle2}}">
+                     value="{{(@$main->subtitle2)?$main->subtitle2:''}}">
               @error('subtitle2')
               <div class="text-danger">{{ $message }}</div>
               @enderror
