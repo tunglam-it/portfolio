@@ -4,7 +4,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="close-modal" data-bs-dismiss="modal">
-        <img src="{{asset('assets/img/close-icon.svg')}}" alt="Close modal"/>
+        <img src="{{secure_asset('assets/img/close-icon.svg')}}" alt="Close modal"/>
       </div>
       <div class="container">
         <div class="row justify-content-center">
@@ -13,7 +13,7 @@
               <!-- Project details-->
               <h2 class="text-uppercase">Project Name</h2>
               <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-              <img class="img-fluid d-block mx-auto" src="{{asset('assets/img/portfolio/1.jpg')}}"
+              <img class="img-fluid d-block mx-auto" src="{{secure_asset('assets/img/portfolio/1.jpg')}}"
                    alt="..."/>
               <p>
                 Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur

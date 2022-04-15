@@ -8,7 +8,7 @@
     <ul class="timeline">
       <li>
         <div class="timeline-image"><img class="rounded-circle img-fluid"
-                                         src="{{asset('assets/img/about/1.jpg')}}" alt="..."/></div>
+                                         src="{{secure_asset('assets/img/about/1.jpg')}}" alt="..."/></div>
         <div class="timeline-panel">
           <div class="timeline-heading">
             <h4>2009-2011</h4>
@@ -25,7 +25,7 @@
       </li>
       <li class="timeline-inverted">
         <div class="timeline-image">
-          <img class="rounded-circle img-fluid" src="{{asset('assets/img/about/2.jpg')}}" alt="..."/>
+          <img class="rounded-circle img-fluid" src="{{secure_asset('assets/img/about/2.jpg')}}" alt="..."/>
         </div>
         <div class="timeline-panel">
           <div class="timeline-heading">
@@ -44,7 +44,7 @@
       </li>
       <li>
         <div class="timeline-image">
-          <img class="rounded-circle img-fluid" src="{{asset('assets/img/about/3.jpg')}}" alt="..."/>
+          <img class="rounded-circle img-fluid" src="{{secure_asset('assets/img/about/3.jpg')}}" alt="..."/>
         </div>
         <div class="timeline-panel">
           <div class="timeline-heading">
@@ -62,7 +62,7 @@
       </li>
       <li class="timeline-inverted">
         <div class="timeline-image">
-          <img class="rounded-circle img-fluid" src="{{asset('assets/img/about/4.jpg')}}" alt="..."/>
+          <img class="rounded-circle img-fluid" src="{{secure_asset('assets/img/about/4.jpg')}}" alt="..."/>
         </div>
         <div class="timeline-panel">
           <div class="timeline-heading">

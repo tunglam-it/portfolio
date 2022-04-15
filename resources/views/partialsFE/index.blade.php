@@ -7,20 +7,20 @@
   <meta name="author" content=""/>
   <title>My Portfolio Site</title>
   <!-- Favicon-->
-  <link rel="icon" type="image/x-icon" href="{{asset('assets/favicon.ico')}}"/>
+  <link rel="icon" type="image/x-icon" href="{{secure_asset('assets/favicon.ico')}}"/>
   <!-- Font Awesome icons (free version)-->
   <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
   <!-- Google fonts-->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"/>
   <!-- Core theme CSS (includes Bootstrap)-->
-  <link href="{{asset('css/styles.css')}}" rel="stylesheet"/>
+  <link href="{{secure_asset('css/styles.css')}}" rel="stylesheet"/>
 </head>
 <body id="page-top">
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
   <div class="container">
-    <a class="navbar-brand" href="#page-top"><img src="{{asset('assets/img/navbar-logo.svg')}}" alt="..."/></a>
+    <a class="navbar-brand" href="#page-top"><img src="{{secure_asset('assets/img/navbar-logo.svg')}}" alt="..."/></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       Menu
@@ -52,7 +52,7 @@
     <div class="col-sm-2"></div>
     <div class="col-sm-4">
       <div>
-        <img id="img-start" src="{{asset('images/main/lisa.jpg')}}" alt="avt">
+        <img id="img-start" src="{{secure_asset('images/main/lisa.jpg')}}" alt="avt">
       </div>
     </div>
     <div class="col-md-1"></div>
@@ -74,7 +74,7 @@
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
-<script src="{{asset('js/scripts.js')}}"></script>
+<script src="{{secure_asset('js/scripts.js')}}"></script>
 <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 </html>
