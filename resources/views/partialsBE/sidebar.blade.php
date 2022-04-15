@@ -45,7 +45,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="" class="nav-link">
+          <a href="{{route('about.index')}}" class="nav-link">
             <i class="fas fa-bible nav-icon"></i>
             <p>
               About
@@ -69,7 +69,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="" class="nav-link">
+          <a href="{{route('service.index')}}" class="nav-link">
             <i class="fas fa-laptop-medical nav-icon"></i>
             <p>
               Service

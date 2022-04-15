@@ -1,34 +1,42 @@
 @extends('partialsBE.main')
 @section('title')
-  <title>Service | Update</title>
+  <title>About | Add</title>
 @endsection
 @section('content')
-  @include('partialsBE.content-header',['key'=>'Home','name'=>'Service'])
+  @include('partialsBE.content-header',['key'=>'Home','name'=>'About'])
   <section class="content">
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <form action="{{route('service.update',['id'=>$service->id])}}" method="post" enctype="multipart/form-data">
+        <form action="{{route('about.store')}}" method="post" enctype="multipart/form-data">
           @csrf
           <div class="form-group row" id="link-form">
+            <div class="col-md-3">
+              <label for="">Image</label>
+              <img id="preview_img" src="" alt="main image" style="width: 300px;height: 300px;">
+              <input type="file" name="image" onchange="readURL(this);"
+                     class="@error('image') is-invalid @enderror">
+              @error('image')
+              <div class="text-danger">{{ $message }}</div>
+              @enderror
+            </div>
             <div class="col-md-6">
               <label for="">Title</label>
               <input type="text" name="title" class="form-control @error('title') is-invalid @enderror"
-                     value="{{$service->title}}">
+                     value="{{old('title')}}">
               @error('title')
               <div class="text-danger">{{ $message }}</div>
               @enderror
 
-              <label for="">Icon</label>
-              <input type="text" name="icon" class="form-control @error('icon') is-invalid @enderror"
-                     value="{{$service->icon}}">
-              @error('icon')
+              <label for="">Timeline</label>
+              <input type="text" name="timeline" class="form-control @error('timeline') is-invalid @enderror"
+                     value="{{old('timeline')}}">
+              @error('timeline')
               <div class="text-danger">{{ $message }}</div>
               @enderror
 
               <label for="">Description</label>
-              <textarea rows="5" type="text" name="description"
-                        class="form-control @error('description') is-invalid @enderror">{{$service->description}}</textarea>
+              <textarea rows="5" type="text" name="description" class="form-control @error('description') is-invalid @enderror">{{old('description')}}</textarea>
               @error('description')
               <div class="text-danger">{{ $message }}</div>
               @enderror

@@ -36,14 +36,14 @@ class MainRequest extends FormRequest
     public function messages()
     {
       return [
-        'title1.required'=>'Không bỏ trống tiêu đề 1',
-        'title2.required'=>'Không bỏ trống tiêu đề 2',
-        'subtitle1.required'=>'Không bỏ trống tiêu đề nhỏ 1',
-        'subtitle2.required'=>'Không bỏ trống tiêu đề nhỏ 2',
-        'main_img.required'=>'Không bỏ trống ảnh',
-        'main_img.image'=>'Tệp phải là ảnh',
-        'main_img.max'=>'Dung lượng ảnh không quá 2MB',
-        'main_img.mimes'=>'Tệp phải là ảnh',
+        'title1.required'=>'Do not leave this field blank',
+        'title2.required'=>'Do not leave this field blank',
+        'subtitle1.required'=>'Do not leave this field blank',
+        'subtitle2.required'=>'Do not leave this field blank',
+        'main_img.required'=>'Do not leave this field blank',
+        'main_img.image'=>'Wrong image format',
+        'main_img.max'=>'Image size not exceed 2MB',
+        'main_img.mimes'=>'Wrong image format',
       ];
     }
 }
