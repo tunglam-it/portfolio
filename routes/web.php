@@ -13,9 +13,7 @@ use App\Http\Controllers;
 |
 */
 
-Route::get('/',function (){
-    return view('partialsFE.index');
-})->name('home');
+Route::get('/',[Controllers\Back\HomeController::class,'show'])->name('home');
 Route::get('/admin',[Controllers\MainController::class,'showDashboard'])->name('admin.showDashboard');
 
 //Main

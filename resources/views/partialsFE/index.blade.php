@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>My Portfolio Site</title>
+  <title>My Portfolio</title>
   <!-- Favicon-->
   <link rel="icon" type="image/x-icon" href="{{secure_asset('assets/favicon.ico')}}"/>
   <!-- Font Awesome icons (free version)-->
@@ -20,7 +20,7 @@
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
   <div class="container">
-    <a class="navbar-brand" href="#page-top"><img src="{{secure_asset('assets/img/navbar-logo.svg')}}" alt="..."/></a>
+    <a class="navbar-brand" href="#page-top"><img src="" alt="..."/></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
             aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       Menu
@@ -41,10 +41,10 @@
   <div class="row">
     <div class="col-sm-1"></div>
     <div class="col-sm-4">
-      <h1 class="font-monospace text-lg-start">My name is Nâm !</h1>
-      <h1 class="font-monospace text-lg-start">It's Nice To Meet You.</h1>
-      <h4 class="font-monospace text-lg-start mt-4">I'm a newbie developer and this is my first project. </h4>
-      <h4 class="font-monospace text-lg-start">Welcome to my site :")</h4>
+      <h1 class="font-monospace text-lg-start">{{@$main[0]->title1?$main[0]->title1:"My name is Nâm !"}}</h1>
+      <h1 class="font-monospace text-lg-start">{{@$main[0]->title2?$main[0]->title2:"It's Nice To Meet You."}}</h1>
+      <h4 class="font-monospace text-lg-start mt-4">{{@$main[0]->subtitle1?$main[0]->subtitle1:"I'm a newbie developer and this is my first project"}}. </h4>
+      <h4 class="font-monospace text-lg-start">{{@$main[0]->subtitle2?$main[0]->subtitle2:"Welcome to my site"}}</h4>
       <div class="mt-4">
         <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
       </div>
@@ -52,7 +52,7 @@
     <div class="col-sm-2"></div>
     <div class="col-sm-4">
       <div>
-        <img id="img-start" src="{{secure_asset('images/main/lisa.jpg')}}" alt="avt">
+        <img id="img-start" src="{{@$main[0]->main_img?url($main[0]->main_img):secure_asset('images/main/avt-re.jpg')}}" alt="avt">
       </div>
     </div>
     <div class="col-md-1"></div>
