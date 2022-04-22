@@ -12,7 +12,7 @@
           <br>
           <div style="font-size: 24px">
             <i class="far fa-envelope"></i>
-            <span>zonakute1@gmail.com</span>
+            <span>hatunglam98@gmail.com</span>
           </div>
         </div>
       </div>

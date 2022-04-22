@@ -12,7 +12,7 @@ class ContactController extends Controller
   public function store(ContactRequest $request)
   {
     $contact_form_data = $request->all();
-    Mail::to('zonakute1@gmail.com')->send(new ContactFormMail($contact_form_data));
+    Mail::to('hatunglam98@gmail.com')->send(new ContactFormMail($contact_form_data));
     return redirect()->route('home','/#contact')->with('success',' Your Message has been submitted successfully!!!');
   }
 }
