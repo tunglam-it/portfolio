@@ -42,7 +42,7 @@
               <div class="text-danger">{{ $message }}</div>
               @enderror
 
-              <label for="">Client</label>
+              <label for="">Link</label>
               <input type="text" name="client" class="form-control @error('client') is-invalid @enderror"
                      value="{{old('client')}}">
               @error('client')

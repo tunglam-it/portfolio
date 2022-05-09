@@ -40,7 +40,7 @@
                 <th>Title</th>
                 <th>Subtitle</th>
                 <th>Category</th>
-                <th>Client</th>
+                <th>Link</th>
                 <th>Description</th>
                 <th>Image</th>
                 <th>Action</th>

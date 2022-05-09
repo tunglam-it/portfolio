@@ -20,7 +20,7 @@
                   <p>{{$portfolio->description}}</p>
                   <ul class="list-inline">
                     <li>
-                      <strong>Client:</strong>{{$portfolio->client}}
+                      <strong>Link:</strong>{{$portfolio->client}}
                     </li>
                     <li>
                       <strong>Category:</strong>{{$portfolio->category}}
